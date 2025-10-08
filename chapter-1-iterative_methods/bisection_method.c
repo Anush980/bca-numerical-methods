@@ -2,6 +2,7 @@
 #include <math.h>
 
 #define f(x) (x * x * x + x + 1) // x^3+x+1
+#define EPS 0.05;
 
 int main()
 {
@@ -9,8 +10,8 @@ int main()
 
     printf("\nEnter the first two initial guesses (xl and xu): ");
     scanf("%f%f", &xl, &xu);
-    printf("\nEnter the Error tolerance: ");
-    scanf("%f", &error);
+    // printf("\nEnter the Error tolerance: ");
+    // scanf("%f", &error);
     // check for the valid guesses
     if (f(xl) * f(xu) > 0)
     {
